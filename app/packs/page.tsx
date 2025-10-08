@@ -15,7 +15,6 @@ export default function PacksPage() {
 
   return (
     <div className="bg-black min-h-screen text-white flex flex-col">
-      {/* Page container to center + limit width */}
       <div className="max-w-6xl w-full mx-auto px-6">
         {/* Logo + Title */}
         <div className="flex flex-col items-center py-6">
@@ -28,19 +27,20 @@ export default function PacksPage() {
           <h1 className="text-2xl font-bold mt-4">Main Catalog</h1>
         </div>
 
-        {/* Menu button row */}
-        <div className="flex items-center py-6">
+        {/* Menu button (below title on mobile, inline on larger screens) */}
+        <div className="flex justify-center md:justify-start py-4">
           <button onClick={() => setMenuOpen(true)}>
             <Menu className="w-6 h-6" />
           </button>
         </div>
 
         {/* Filters + Sort + Count */}
-        <div className="flex justify-between items-center py-4 text-sm">
-          <div className="flex gap-6">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 py-4 text-sm">
+          {/* Filter + Sort controls */}
+          <div className="flex flex-col sm:flex-row gap-4">
             <label className="text-white">
               Filter by:
-              <select className="ml-2 bg-black text-white border border-white px-2 py-1">
+              <select className="ml-2 bg-black text-white border border-white px-2 py-1 rounded">
                 <option>All products</option>
                 <option>Paid</option>
                 <option>Free</option>
@@ -48,7 +48,7 @@ export default function PacksPage() {
             </label>
             <label className="text-white">
               Sort by:
-              <select className="ml-2 bg-black text-white border border-white px-2 py-1">
+              <select className="ml-2 bg-black text-white border border-white px-2 py-1 rounded">
                 <option>Date, new to old</option>
                 <option>Date, old to new</option>
                 <option>Price, low to high</option>
@@ -56,11 +56,12 @@ export default function PacksPage() {
               </select>
             </label>
           </div>
+          {/* Product count */}
           <span>{packs.length} products</span>
         </div>
 
         {/* Grid of packs */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-20 place-items-center">
           {packs.map((pack) => (
             <PackCard key={pack.id} pack={pack} />
           ))}
@@ -87,7 +88,7 @@ export default function PacksPage() {
             About Us
           </Link>
           <Link href="/cook-up" onClick={() => setMenuOpen(false)} className="hover:underline">
-            Cook Up
+            Cook Up Footage
           </Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:underline">
             Contact
