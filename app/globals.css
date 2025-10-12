@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Overused Grotesk VF */
+@font-face {
+  font-family: "OverusedGrotesk";
+  src: url("/fonts/OverusedGrotesk-VF.ttf") format("truetype");
+  font-weight: 100 900; /* variable axis range */
+  font-display: swap;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: white;
+  font-family: "OverusedGrotesk", sans-serif;
 }
