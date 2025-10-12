@@ -33,7 +33,7 @@ export default function CookUpPage() {
               controls={false}
               className="w-full h-auto rounded-lg shadow-lg"
             >
-              <source src="https://res.cloudinary.com/dpfji6m9a/video/upload/v1759925613/cookup_qhliqk.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dpfji6m9a/video/upload/v1760264981/eleven7_w_visualiser_rp4eir.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
