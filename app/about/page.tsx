@@ -34,10 +34,11 @@ export default function AboutPage() {
 </p>
 
 <p className="mb-4">
-  They have <strong>worked with artists including KWN, Lancey Foux, Lil Yachty, Maeta, Joe James</strong>, 
-  and many more, building a reputation for delivering both cutting-edge and timeless records. 
-  Their collaborative approach and deep musicality allow them to seamlessly shift between styles, 
-  whether crafting genre-bending soundscapes, hard-hitting rhythms, or soulful melodies.
+  They have <strong>worked with artists including KWN, Lancey Foux, Lil Yachty, Maeta, Joe James, 
+  and many more. Their work also includes soundtracking culture through collaborations with iconic brands 
+  such as Under Armour, Trapstar and many more</strong>, building a reputation for delivering both cutting-edge and 
+  timeless records and sounds. Their collaborative approach and deep musicality allow them to seamlessly shift 
+  between styles, whether crafting genre-bending soundscapes, hard-hitting rhythms, or soulful melodies.
 </p>
 
 <p>
