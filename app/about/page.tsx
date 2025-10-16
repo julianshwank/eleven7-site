@@ -28,7 +28,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-300">
           <p className="mb-4">
   <strong>Eleven7</strong> is a British music production duo and multi-instrumentalists 
-  made up of miguellondon and Julian. Known for their versatility across sounds and genres, 
+  made up of Miguel and Julian. Known for their versatility across sounds and genres, 
   the pair bring a unique blend of musicianship, experimentation, and forward-thinking 
   production to every project.
 </p>
