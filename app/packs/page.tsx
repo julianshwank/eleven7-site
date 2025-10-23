@@ -5,6 +5,7 @@ import MusicPlayer from "@/components/MusicPlayer";
 import { Menu, X } from "lucide-react"; // icons
 import { useState } from "react";
 import Link from "next/link";
+import Newsletter from "@/components/Newsletter"; // 👈 added
 
 const packs = [
   { id: "quin", name: "117 VOL.1", price: "£9.99 GBP", image: "/images/artwork.jpg" }
@@ -66,6 +67,9 @@ export default function PacksPage() {
             <PackCard key={pack.id} pack={pack} />
           ))}
         </div>
+
+        {/* Newsletter (above music player) */}
+        <Newsletter />
       </div>
 
       <MusicPlayer />

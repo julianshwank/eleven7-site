@@ -1,7 +1,4 @@
 {
   "/page": "app/page.js",
-  "/cook-up/page": "app/cook-up/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/about/page": "app/about/page.js",
   "/packs/page": "app/packs/page.js"
 }
